@@ -12,17 +12,7 @@ def task()
 
   karel = Question2Tache4.new(3, 3, Robota::NORTH, 5)
 
-karel.put_beeper
-
-karel.move
-karel.put_beeper
-karel.move			s
-karel.put_beeper
-karel.move
-karel.put_beeper
-karel.move
-karel.put_beeper
-karel.move
+karel.mettre_5_beepers 
       
 end
 
