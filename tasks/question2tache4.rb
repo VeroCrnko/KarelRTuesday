@@ -28,6 +28,7 @@ def put_5_rows_of_beepers
   turn_right()
   turn_right()
   move()
+  move()
   turn_right()
   move()
   turn_right()
