@@ -10,7 +10,7 @@ require_relative "../karel/robota"
 # a task for a stair sweeper
 def task()
 
-  karel = question3tache4.new(3, 3, Robota::NORTH, 5)
+  karel = question2tache4.new(3, 3, Robota::NORTH, 5)
   
   karel.mettre_5_beeper
 
@@ -20,7 +20,7 @@ end
 
 if __FILE__ == $0
   if $graphical
-     screen = window(8, 40) # (size, speed)
+     screen = window(14, 40) # (size, speed)
      screen.run do
        task
      end
