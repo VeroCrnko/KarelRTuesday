@@ -13,6 +13,7 @@ def task()
   karel = Question2Tache4.new(3, 3, Robota::NORTH, 25)
 
 karel.put_5_rows_of_beepers 
+   
       
 end
 
