@@ -4,7 +4,7 @@
 
 $graphical = true
 
-require_relative "stair_sweeper"
+require_relative "question3tache4"
 require_relative "../karel/robota"
 
 # a task for a stair sweeper
@@ -12,7 +12,7 @@ def task()
   world = Robota::World
   world.read_world("../worlds/stair_world.txt")
   
-  karel = question3tache4.rb
+  karel = Question3Tache4.new(3, 3, Robota::NORTH, 5)
   #!/usr/bin/env ruby -wKU.new(1, 1, Robota::EAST, 0)
   karel.mettre_5_beepers()
   world.show_world_with_robots(1, 1, 6, 6)
