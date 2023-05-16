@@ -27,3 +27,4 @@ if __FILE__ == $0
      task
    end
 end
+
