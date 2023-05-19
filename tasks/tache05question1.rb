@@ -10,20 +10,14 @@ require_relative "../mixins/turner"
 # A class whose robots know how to sweep a short staircase of beepers
 class Question2Tache4 < UrRobot
   include Turner 
- def mettre_5_beepers 
-  put_beeper
-  move()
-   put_beeper
-  move()
-   put_beeper
-  move()
-   put_beeper
-  move()
-   put_beeper
-  move()
+ 
    
  end
-def put_5_rows_of_beepers
+def task 
+  world = Robota :: World
+  world.read_world(../tasks/)
+
+  karel = 
   mettre_5_beepers
   move()
   turn_right()
