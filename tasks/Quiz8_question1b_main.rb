@@ -4,6 +4,7 @@
 
 $graphical = true
 
+require_relative "dessine_une_cloche"
 require_relative "../karel/robota"
 require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
@@ -14,13 +15,25 @@ include Turner
   karel = UrRobot.new(6, 1, Robota::NORTH, 26)
 
 
-
-
-#karel.Quiz8_question1_main.rb.new(6, 1, Robota :: NORTH, 26)
+ # une tache pour dessiner une cloche avec des beepers
 def task()
+ world = Robota :: World
+ karel = Dessine_une_cloche.new(1, 6, Robota::NORTH, 10)
 
 karel.move()
 karel.put_beeper()
+karel.move()
+karel.put_beeper()
+karel.turn_right()
+karel.put_beeper()
+karel.move()
+karel.put_beeper()
+karel.move()
+karel.put_beeper()
+karel.move()
+karel.turn_left()
+karel.move()
+
 
 end
 
