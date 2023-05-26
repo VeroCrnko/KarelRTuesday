@@ -10,12 +10,13 @@ $graphical = true
 
 require_relative "../karel/robota"
 require_relative "../karel/ur_robot"
-include Turner 
+
  
 # a task for a stair sweeper
 def task()
+	class DiamandBeepers < UrRobot 
 
-  karel = Quiz8_question1b.new(1, 6, Robota::NORTH, 10)
+  karel = Tache5question2.new(1, 6, Robota::NORTH, 10)
 
 
       

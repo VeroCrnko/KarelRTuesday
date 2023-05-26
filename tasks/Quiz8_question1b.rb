@@ -8,34 +8,55 @@
 require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
 # A class whose robots know how to sweep a short staircase of beepers
-class Question2Tache4 < UrRobot
+class Quiz8_question1b < UrRobot
   include Turner 
  
    
  end
-def task 
-  world = Robota :: World
-  world.read_world(../tasks/)
-
-  karel = 
-  mettre_5_beepers
-  move()
-  turn_right()
-  move()
-  turn_right()
-  move()
-  move()
-  mettre_5_beepers
-  turn_left()
-  move()
-  turn_left()
-  move()
-  mettre_5_beepers
-  turn_right
-  move()
-  turn_right
-  move()
-  mettre_5_beepers
+def dessine_unecloche 
+   karel.move()
+ karel.put_beeper
+ karel.turn_right
+ karel.move()
+ karel.turn_left()
+ karel.move()
+ karel.put_beeper()
+ karel.turn_left()
+ karel.move() 
+ karel.move() 
+ karel.put_beeper
+ karel.move()
+ karel.turn_right
+ karel.move()
+ karel.put_beeper
+ karel.turn_right
+ karel.move() 
+ karel.move()
+ karel.put_beeper()
+ karel.move() 
+ karel.move()
+ karel.put_beeper()
+ karel.move()
+ karel.turn_left()
+ karel.move()
+ karel.put_beeper
+ karel.turn_left()
+ karel.move() 
+ karel.move()
+ karel.put_beeper()
+ karel.move()
+ karel.move()
+ karel.put_beeper()
+ karel.move()
+ karel.move()
+ karel.put_beeper()
+ karel.turn_right
+ karel.move()
+ karel.turn_right()
+ karel.move()
+ karel.move()
+ karel.move()
+ karel.turn_right()
 
 
 

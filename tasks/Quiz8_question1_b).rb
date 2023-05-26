@@ -1,29 +1,25 @@
 #!/opt/local/bin/ruby
 #Copyright 2012 Joseph Bergin
 #License: Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License
-#
-# 2023_05_16 - VERSION FINALE - Tache 5 - Question 1
-# Fait par : Veronica Crnko 
-####################################################################
 
 $graphical = true
 
+require_relative "question2tache4"
 require_relative "../karel/robota"
-require_relative "../karel/ur_robot"
-include Turner 
- 
+
 # a task for a stair sweeper
 def task()
 
-  karel = Quiz8_question1b.new(1, 6, Robota::NORTH, 10)
+  karel = Question2Tache4.new(3, 3, Robota::NORTH, 25)
 
+karel.put_5_rows_of_beepers 
 
       
 end
 
 if __FILE__ == $0
   if $graphical
-     screen = window(10, 50) # (size, speed)
+     screen = window(16, 40) # (size, speed)
      screen.run do
        task
      end
@@ -31,3 +27,4 @@ if __FILE__ == $0
      task
    end
 end
+
