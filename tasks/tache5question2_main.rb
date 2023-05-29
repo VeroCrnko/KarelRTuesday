@@ -14,8 +14,7 @@ require_relative "../karel/ur_robot"
  
 # a task for a stair sweeper
 def task()
-	class DiamandBeepers < UrRobot 
-
+	
   karel = Tache5question2.new(1, 6, Robota::NORTH, 10)
 
 

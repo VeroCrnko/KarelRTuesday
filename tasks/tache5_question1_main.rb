@@ -8,15 +8,17 @@
 
 $graphical = true
 
+require_relative "tache05question1"
 require_relative "../karel/robota"
 require_relative "../karel/ur_robot"
-include Turner 
+require_relative "../mixins/turner"
+
  
 # a task for a stair sweeper
 def task()
 
-  karel = Quiz8_question1b.new(1, 6, Robota::NORTH, 10)
-
+  karel = Tache5Question2.new(1, 6, Robota::NORTH, 15)
+  
 
       
 end
