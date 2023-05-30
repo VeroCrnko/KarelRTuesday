@@ -13,12 +13,12 @@ class Tache5Question2 < UrRobot
  
    
  end
-def task 
-  world = Robota::World
-  world.read_world("../karel/veronica")
+def double_move
+  move;move 
+
+end 
+
 
   
 
 
-
-end

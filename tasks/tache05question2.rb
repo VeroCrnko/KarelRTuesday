@@ -8,13 +8,14 @@
 require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
 # A class whose robots know how to sweep a short staircase of beepers
- class DiamandBeepers < UrRobot 
-       include Turner 
+def task() 
+  world = Robota::World 
+  world.read_world("../karel/veronica")
  
-   
+  karel = Tache5Question2.new(1, 6, Robota:: NORTH, 16)
  end
 
- # karel dessine un diamant de beepers
+ # a task for karel to put away the brocoli in his garden
 def 
 
 
