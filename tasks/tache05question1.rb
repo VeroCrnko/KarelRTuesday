@@ -16,6 +16,8 @@ class Tache5Question2 < UrRobot
 def double_move
   move;move 
 
+  
+
 end 
 
 
