@@ -8,10 +8,8 @@
 
 $graphical = true
 
-require_relative "../karel/robota"
 require_relative "../karel/ur_robot"
-include Turner 
- 
+require_relative "../mixins/turner"
 # a task for a stair sweeper
 def task()
 

@@ -8,17 +8,14 @@
 
 $graphical = true
 
-require_relative "../karel/robota"
 require_relative "../karel/ur_robot"
+require_relative "../mixins/turner" 
 
- 
-# a task for a stair sweeper
 def task()
-	class DiamandBeepers < UrRobot 
 
-  karel = Tache5question2.new(1, 6, Robota::NORTH, 10)
+  karel = Tache05question2.new(3, 6, Robota::NORTH, 15)
 
-
+ karel.range_tout_le_brocoli
       
 end
 
