@@ -11,13 +11,15 @@ require_relative "../mixins/turner"
  class Tache05Question2 < UrRobot 
 
 
+  def range_tout_le_brocoli
+    karel.move()
+    karel.mettre_3_beepers
+
+
+
+
+  end
+
  end
-def range_tout_le_brocoli
-	karel.move()
-	karel.mettre_3_beepers
 
-
-
-
-end
 end 

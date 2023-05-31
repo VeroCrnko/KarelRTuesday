@@ -8,16 +8,20 @@
 
 $graphical = true
 
+require_relative "tache05question1"
+require_relative "../karel/robota"
 require_relative "../karel/ur_robot"
-require_relative "../mixins/turner" 
+require_relative "../mixins/turner"
 
+ 
+# a task for a stair sweeper
 def task()
-  karel = Tache5question2.new(1, 6, Robota::NORTH, 10)
+  world = Robota::World
+  world.read_world("../karel/veronica")
 
-  world = Robota::World 
-  world.read("veronica")
-  
- karel.range_tout_le_brocoli
+  karel = Tache5Question2.new(1, 6, Robota::NORTH, 16)
+ 
+
       
 end
 
