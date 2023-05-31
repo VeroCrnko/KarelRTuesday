@@ -13,8 +13,9 @@ require_relative "../mixins/turner"
 
 def task()
 
-  karel = Tache05question2.new(3, 6, Robota::NORTH, 15)
-
+  world = Robota::World 
+  world.read("veronica")
+  
  karel.range_tout_le_brocoli
       
 end

@@ -9,19 +9,7 @@ require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
 # A class whose robots know how to place a beepers in a diamond shape
  class Tache05Question2 < UrRobot 
- include Turner 
-  def mettre_3_beepers
-  	karel.move()
-  	 karel.put_beeper()
-  	karel.move()
-  	karel.move()
-  	 karel.put_beeper()
-    karel.move()
-  	karel.move()
-  	 karel.put_beeper()
-  	karel.move()
-  	karel.move()
-  	 karel.put_beeper()
+
 
  end
 def range_tout_le_brocoli
