@@ -4,22 +4,37 @@
 # 2023_05_15 HI EVERYBODY I GOT IT WORKING AT HOME!!! HAHAHAHAHA
 ####################################################################
 
-
+#!/opt/local/bin/ruby
+#require_relative "tache05question2"
 require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
-# A class whose robots know how to place a beepers in a diamond shape
- class Tache05Question2 < UrRobot 
 
+class Tache5Question2 < UrRobot 
+  include Turner
 
-  def range_tout_le_brocoli
-    karel.move()
-    karel.mettre_3_beepers
-
+ def
 
 
 
-  end
 
- end
 
-end 
+
+#def task ()
+#karel = Tache5Question2.new(5,6,NORTH, 20)
+	# Deliver robot to the origin (1,6)
+	# facing north
+#    move()
+#    pick_beeper()
+#    move()
+#    move()
+#    pick_beeper()
+  
+
+  
+
+#end 
+
+
+  
+
+
