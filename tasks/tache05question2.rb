@@ -12,7 +12,7 @@ require_relative "../mixins/turner"
 class Tache5Question2 < UrRobot 
   include Turner
 
- def
+ 
 
 
 
