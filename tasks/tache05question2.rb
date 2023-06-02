@@ -1,38 +1,69 @@
 #Copyright 2010 Joseph Bergin
 #License: Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License
 #
-# 2023_05_15 HI EVERYBODY I GOT IT WORKING AT HOME!!! HAHAHAHAHA
+# 2023_06_01 - VERSION FINALE - Tache 5 - Question 2
+# Fait par : Veronica Crnko 
 ####################################################################
 
 #!/opt/local/bin/ruby
-#require_relative "tache05question2"
+
 require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
 
-class Tache5Question2 < UrRobot 
-  include Turner
-
- 
-
-
-
-
-
-
-#def task ()
-#karel = Tache5Question2.new(5,6,NORTH, 20)
-	# Deliver robot to the origin (1,6)
-	# facing north
-#    move()
-#    pick_beeper()
-#    move()
-#    move()
-#    pick_beeper()
+# A class whose robot can pick up beepers
+class PickBeepers < UrRobot
+include Turner
+	
   
+	def upright_diag1
+		 move
+		 pick_beeper
+		 turn_right
+		 move
+		 turn_left
+	end
 
-  
 
-#end 
+	def upright_diag4
+		 upright_diag1()
+       upright_diag1()
+       upright_diag1()
+       upright_diag1()
+	end
+
+	def upright_recover
+		move
+		turn_left
+		move
+	end 
+
+	def downleft_diag1
+       move 
+       pick_beeper
+       turn_left
+       move
+       turn_right
+   end 
+     
+   def downleft_diag4
+   	 downleft_diag1()
+   	 downleft_diag1()
+   	 downleft_diag1()
+   	 downleft_diag1()
+   end
+
+   def downleft_recover 
+   	 move 
+   	 turn_right
+   	 move
+   end
+
+	def TurnAround()
+		turn_left
+		turn_left
+	end 
+end
+
 
 
   
