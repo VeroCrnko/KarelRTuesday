@@ -14,7 +14,7 @@ require_relative "../mixins/turner"
 class PutBeepers < UrRobot
 include Turner
   
-def placeturn_left
+def place3turn_left
 	 put_beeper
 	 move
 	 put_beeper
@@ -25,7 +25,7 @@ def placeturn_left
 end
 
 
-     def placeturn_right
+     def place2turn_right
 	     move
 	     put_beeper
 	     turn_left
@@ -33,6 +33,10 @@ end
 	     put_beeper
 	     turn_right
      end
+
+     
+
+
  end
 
 
