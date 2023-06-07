@@ -47,7 +47,7 @@ end
 
 
 
-        def place5_beepers
+        def place4_beepers
         	move
         	put_beeper
         	move
@@ -56,8 +56,7 @@ end
         	put_beeper
         	move
         	put_beeper
-        	move
-        	put_beeper
+
         end
 
  end

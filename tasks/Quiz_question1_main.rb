@@ -33,7 +33,15 @@ def task()
  karel.move()
  karel.turn_right()
  karel.place3turn_right()
- karel.turn_right()
+ karel.turn_left()
+ karel.turn_left()
+ karel.move()
+ karel.put_beeper()
+ karel.turn_left()
+ karel.turn_left()
+ karel.move()
+ karel.move()
+ karel.put_beeper()
 
 
 end
