@@ -24,18 +24,41 @@ def place3turn_left
 	 turn_left
 end
 
+       def place3turn_right
+            put_beeper
+            move
+            put_beeper
+            turn_left
+            move
+            put_beeper
+            turn_right
+        end
 
-     def place2turn_right
+
+
+     def place2turn_left
 	     move
 	     put_beeper
 	     turn_left
 	     move
 	     put_beeper
 	     turn_right
-     end
+        end
 
-     
 
+
+        def place5_beepers
+        	move
+        	put_beeper
+        	move
+        	put_beeper
+        	move
+        	put_beeper
+        	move
+        	put_beeper
+        	move
+        	put_beeper
+        end
 
  end
 

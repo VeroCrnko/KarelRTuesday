@@ -19,16 +19,22 @@ def task()
   
  karel = PutBeepers.new(1, 6, Robota::NORTH, 25)
  karel.place3turn_left()
- karel.place2turn_right()
+ karel.place2turn_left()
  karel.place3turn_left()
- karel.place2turn_right()
+ karel.place2turn_left()
  karel.place3turn_left()
- karel.place2turn_right()
+ karel.place2turn_left()
  karel.move()
  karel.put_beeper()
  karel.turn_left()
+ karel.move()
  karel.turn_left()
- karel.turn_left()
+ karel.place4_beepers
+ karel.move()
+ karel.turn_right()
+ karel.place3turn_right()
+ karel.turn_right()
+
 
 end
 
