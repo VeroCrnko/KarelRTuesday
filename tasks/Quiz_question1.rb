@@ -1,7 +1,7 @@
 #Copyright 2010 Joseph Bergin
 #License: Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License
 #
-# 2023_06_01 - VERSION FINALE - Tache 5 - Question 2
+# 2023_06_01 - VERSION FINALE - Quiz 08 - Question 1
 # Fait par : Veronica Crnko 
 ####################################################################
 

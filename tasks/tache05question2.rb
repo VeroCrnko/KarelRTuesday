@@ -10,6 +10,7 @@
 require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
 
+
 # A class whose robot can pick up beepers
 class PickBeepers < UrRobot
 include Turner
