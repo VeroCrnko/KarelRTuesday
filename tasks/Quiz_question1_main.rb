@@ -17,7 +17,7 @@ require_relative "Quiz_question1.rb"
 def task()
  
   
- karel = PutBeepers.new(1, 6, Robota::NORTH, 25)
+ karel = PutBeepers.new(1, 6, Robota::NORTH, 28)
  karel.place3turn_left()
  karel.place2turn_left()
  karel.place3turn_left()
@@ -42,13 +42,14 @@ def task()
  karel.move()
  karel.move()
  karel.put_beeper()
+ karel.moveto_otherside_place3()
 
 
 end
 
 if __FILE__ == $0
   if $graphical
-     screen = window(10, 50) # (size, speed)
+     screen = window(10, 90) # (size, speed)
      screen.run do
        task
      end
