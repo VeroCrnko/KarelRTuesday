@@ -1,7 +1,7 @@
 #Copyright 2010 Joseph Bergin
 #License: Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License
 #
-# 2023_06_01 - VERSION FINALE - Quiz 08 - Question 1
+# 2023_06_20 - VERSION FINALE - Quiz 08 - Question 2
 # Fait par : Veronica Crnko 
 ####################################################################
 
@@ -52,11 +52,54 @@ include Turner
        move
        turn_left
        move
-       
-
+       move
 
  end
 
+       def face_adjchimney
+       turn_right 
+end
+      
+
+     def moveto_chimneysabove
+         turn_left
+         move
+         move
+         move
+         move
+         move
+         move
+         move
+         move
+         move
+         turn_right
+         move
+         move
+         move
+         move
+         move
+         move
+     end     
+
+     def backtocave_drop_gifts
+         move
+         turn_right
+         move
+         move
+         move
+         move
+         move
+         move
+         move
+         move
+         move
+         turn_left
+         move
+         turn_right
+         move
+         move
+         put_beeper
+     end    
 
 end
   

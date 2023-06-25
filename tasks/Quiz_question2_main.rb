@@ -2,7 +2,7 @@
 #Copyright 2012 Joseph Bergin
 #License: Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License
 #
-# 2023_06_01 - VERSION FINALE - Quiz 08 - Question 1
+# 2023_06_20 - VERSION FINALE - Quiz 08 - Question 2
 # Fait par : Veronica Crnko 
 ####################################################################
 
@@ -23,13 +23,25 @@ def task()
  
  karel.move5_steps()
  karel.enter_chimney()
-
+ karel.face_adjchimney()
+ karel.enter_chimney()
+ karel.face_adjchimney()
+ karel.enter_chimney()
+ karel.moveto_chimneysabove()
+ karel.face_adjchimney()
+ karel.enter_chimney()
+ karel.face_adjchimney()
+ karel.enter_chimney()
+ karel.face_adjchimney()
+ karel.enter_chimney()
+ karel.face_adjchimney()
+ karel.backtocave_drop_gifts()
 
 end
 
 if __FILE__ == $0
   if $graphical
-     screen = window(20, 50) # (size, speed)
+     screen = window(20, 90) # (size, speed)
      screen.run do
        task
      end
