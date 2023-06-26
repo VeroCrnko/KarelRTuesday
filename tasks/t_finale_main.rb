@@ -37,13 +37,7 @@ def task()
  akinorev.move13_turnleft()
  akinorev.akino_movedown()
  akinorev.put3_colonnes()
- 
 end
-
-
-
-
-
 
 
 if __FILE__ == $0

@@ -80,6 +80,7 @@ def akino_movedown
 	move
 end
  
+
  def put3_colonnes
  	 put_beeper
  	 turn_left
@@ -101,12 +102,7 @@ end
      move
      put_beeper
  end    
-
- end    
-
-
-
-
+    
 end
  
 
